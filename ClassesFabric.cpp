@@ -3,15 +3,15 @@
 #include <string>
 #include <vector>
 #include <sstream>
-
 using namespace std;
 
+//реализовываем класс Base
 class Base {
 protected:
 	int value;
 public:
-	Base() : value(0) {};
-	Base(int val) : value(val) {};
+	Base() : value(0) {}; //конструктор
+	Base(int val) : value(val) {};//конструктор с параметрами 
 
 	int get() { return value; };
 	virtual void show() = 0;
